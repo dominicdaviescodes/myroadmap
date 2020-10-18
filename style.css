@@ -12,6 +12,7 @@ h1 {
   width: 450px;
   text-align: center;
   padding-bottom: 20px;
+  box-shadow: 4px 4px 5px #888;
 }
 
 img {
