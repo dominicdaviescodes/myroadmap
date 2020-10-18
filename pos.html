@@ -10,29 +10,66 @@
 
 <body>
     <h1>Position Property</h1>
+
     <section id="static">
         <h2>Static</h2>
+        <p>Static is the default so if you style it there will be no change.</p>
         <div></div>
         <div id="middle"></div>
         <div></div>
     </section>
     <section id="relative">
         <h2>Relative</h2>
+        <p>Keeps element in normal flow of document. Can offset it relative to itself using top, left etc. when you set
+            position: relative; nothing happens until you set top, left etc.</p>
+        <p>
+            Setting top: 50px; pushes the box down 50px from it's current postion. we are offsetting from where it would
+            normally be.
+        </p>
+        <p>The place where the element would have been is kept empty.</p>
         <div></div>
-        <div id="middle"></div>
+        <div id="middle">
+            position: relative; <br>
+            top: 50px; <br>
+            left: 50px;
+        </div>
         <div></div>
     </section>
     <section id="absolute">
         <h2>Absolute</h2>
+        <p>element is removed from normal flow of document.</p>
+        <p>(mdn) First of all, note that the gap where the positioned element should be in the document flow is no
+            longer there — the first and third elements have closed together like it no longer exists! Well, in a way,
+            this is true. An absolutely positioned element no longer exists in the normal document layout flow</p>
+        <p>Instead, it sits on its own layer separate from everything else. This is very useful: it means that we
+            can create isolated UI features that don't interfere with the layout of other elements on the page. For
+            example, popup information boxes and control menus; rollover panels; UI features that can be dragged and
+            dropped anywhere on the page; and so on...</p>
+        <p>Second, notice that the position of the element has changed — this is because top, bottom, left, and
+            right behave in a different way with absolute positioning. Rather than positioning the element based
+            on its relative position within the normal document layout flow, they specify the distance the
+            element should be from each of the containing element's sides. So in this case, we are saying that
+            the absolutely positioned element should sit 30px from the top of the "containing element", and 30px
+            from the left. Usually the body element.</p>
+        <p>You can set a parent to be relative then the element would be positioned relative to that element</p>
         <div></div>
-        <div id="middle"></div>
+        <div id="middle">
+            position: absolute; <br>
+            top: 1px; <br>
+            left: 450px;
+        </div>
         <div></div>
     </section>
 
     <section id="fixed">
         <h2>Fixed</h2>
+        <p>Sticky is similar except it starts out in it's normal position and only fixes when scrolled. fixed is always fixed to the position when the document loads. </p>
         <div></div>
-        <div id="middle"></div>
+        <div id="middle"> position: fixed; <br>
+            top: 0; <br>
+            left: 250px; <br>
+            <p>Always stays here when you scroll</p>
+        </div>
         <div></div>
     </section>
 
