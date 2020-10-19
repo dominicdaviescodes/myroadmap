@@ -11,18 +11,50 @@
 </head>
 
 <body>
-  <div class="zone green">🦊</div>
-  <div class="zone red">🐰</div>
-  <div class="zone blue">🐸</div>
-  <div class="zone yellow">🦁</div>
-  <div class="zone purple">🐯</div>
-  <div class="zone brown">🐭</div>
-  <div class="zone green">🦄</div>
-  <div class="zone red">🐲</div>
-  <div class="zone blue">🐷</div>
-  <div class="zone yellow">🐺</div>
-  <div class="zone purple">🐼</div>
-  <div class="zone brown">🐻</div>
+  <section class="main">
+    <p>Bootstrap got popular due to it's grid, but now we can use flexbox and grid to make any layouts we want.</p>
+    <img src="img/flexgrid.png" alt="flex and grid examples" class="regular-img">
+    <p>Quick Note: grid-gap to gap
+
+      Heads up! In the next video we dive into the exciting world of CSS Grid! As you know, the web development world is
+      fast changing so one quick update that has happened since the next video was filmed is that the property you are
+      going to learn about:
+      grid-gap
+      has been changed to
+      gap</p>
+    <p>Wrap all the items in a container. style it display: grid. Then set grid-template-columns, tell page how many
+      columns. If use 2 values like 300px 300px it will put elements into 2 columns. to make a gap between elements gap:
+      20px;</p>
+    <p>because we set the grid-template-columns statically to 300px each it's not responsive.</p>
+    <h2>fr syntax</h2>
+    <p>If you use 1fr, the page will use 1 column.</p>
+    <p>If you use 1fr 1fr, the page will use 2 columns.</p>
+    <p>If you use 1fr 1fr 2fr, the page will use 2 columns of 1fr and 1 col of 2fr.</p>
+    <img src="img/1fr1fr2fr.PNG" alt="example of 1fr 1fr 2fr output" class="regular-img">
+    <p>grid-template-rows: 1fr 2fr; the 2nd row is twice the height of the 1st row.</p>
+    <p>we can use shorthand. grid-template-columns: 1fr 1fr 1fr; we could say repeat(3, 1fr)</p>
+    <p>grid-template-columns: auto; auto property fits the content.</p>
+    <h2>A common grid setting</h2>
+    <p>grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</p>
+    <p><a href="https://grid.malven.co/">CSS Grid Cheetsheet</a> </p>
+    <p><a href="http://cssgridgarden.com/">http://cssgridgarden.com/</a> </p>
+
+  </section>
+  <h2>The main Event</h2>
+  <div class="container">
+    <div class="zone green">🦊</div>
+    <div class="zone red">🐰</div>
+    <div class="zone blue">🐸</div>
+    <div class="zone yellow">🦁</div>
+    <div class="zone purple">🐯</div>
+    <div class="zone brown">🐭</div>
+    <div class="zone green">🦄</div>
+    <div class="zone red">🐲</div>
+    <div class="zone blue">🐷</div>
+    <div class="zone yellow">🐺</div>
+    <div class="zone purple">🐼</div>
+    <div class="zone brown">🐻</div>
+  </div>
   <ul>
     <li>
       <a href="index.html">Gallery</a>
