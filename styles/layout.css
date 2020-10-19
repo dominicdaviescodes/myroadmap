@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .main-nav {
         font-size: 0.6em;
         padding: 0;
@@ -47,6 +47,15 @@ a {
 
 .push {
     margin-left: auto;
+}
+
+/* Cover/Showcase */
+.container {
+    display: flex;
+    /* text in center */
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
