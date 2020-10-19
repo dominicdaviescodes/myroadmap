@@ -58,6 +58,10 @@ a {
     height: 95vh;
 }
 
+.cover {
+    width: 30rem;
+}
+
 /* Projects / Grid */
 
 .grid-wrapper {
