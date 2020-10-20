@@ -5,16 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/trans.css">
-  <title>Document</title>
+  <title>Transitions</title>
 </head>
 
 <body>
+  <h1>Transitions</h1>
+
   <p>Transitions enable you to define the transition between two states of an element. Different states may be defined
     using pseudo-classes like :hover or :active or dynamically set using JavaScript.</p>
+  <p>This example without transition simply switches instantly from square to circle.</p>
+  <p>we can style the changeover delaying it slightly and making the transition smoother or ease in or dozens of other
+    effects.</p>
+  <div class="circle circle-1"></div>
+  <br>
+  <h2>shape 2. I set a transition: .5s;</h2>
+  <p>everything changes. You can specify all, so all properties will change.</p>
+  <p>In JS you can add and remove classes, it's not just hovering.</p>
+
+  <div class="circle circle-2"></div>
+
   <p>The transition CSS property is a shorthand property for transition-property, transition-duration,
     transition-timing-function, and transition-delay.</p>
 
-
+  <img src="img/trans1.PNG" alt="">
+  <br>
+  <h2>shape 3. transition: background-color 3s;</h2>
+  <p>
+    the shape change is instant, however the bg color changes slowly. you could even add a delay in seconds and the
+    transition won't begin until then.
+  </p>
+  <div class="circle circle-3"></div>
+  <br>
+  <p>There are so many ease in options <a href="https://easings.net/">Easing functions specify the rate of change of a
+      parameter over time.</a> </p>
+  <p><a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">transition-timing-function</a>
+  </p>
   <!-- <section>
     <div></div>
     <div></div>
