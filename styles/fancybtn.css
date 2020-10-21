@@ -16,4 +16,18 @@ button {
   border: 2px solid;
   padding: 1em 2em;
   font-size: 1em;
+  /* avoid using all, list out the transitions */
+  transition: color 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+button:hover {
+  border-color: #f1ff5c;
+  color: #fff;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  /* negative moves btn  up, positive number moves element down */
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
