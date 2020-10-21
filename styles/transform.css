@@ -58,7 +58,7 @@ section:nth-of-type(2) h1:nth-of-type(4):hover {
 }
 
 section:nth-of-type(3) {
-  transform: rotate(45deg) scale(1.1);
+  transform: rotate(45deg) scale(1.1) translateY(400px);
 }
 
 section:nth-of-type(3):hover {
