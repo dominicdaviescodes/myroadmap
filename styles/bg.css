@@ -1,0 +1,26 @@
+section {
+  width: 80%;
+  height: 60vh;
+  background-image: url(https://images.pexels.com/photos/3626622/pexels-photo-3626622.jpeg?cs=srgb&dl=pexels-daria-shevtsova-3626622.jpg&fm=jpg);
+  background-size: cover;
+  margin: 25px auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 20px;
+}
+
+img {
+  width: 400px;
+}
+
+section:nth-of-type(2) {
+  background-size: contain;
+}
+
+section:nth-of-type(3) {
+  background-position: bottom;
+}
