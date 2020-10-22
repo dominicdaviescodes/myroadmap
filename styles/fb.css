@@ -1,14 +1,51 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-h1 {
-    text-align: center;
-}
-#container {
-    background-color: #003049;
+
+img {
     width: 90%;
-    height: 500px;
-    margin: 0 auto;
-    border: 5px solid #003049;
+    display: block;
+    margin: 50px auto;
 }
 
+h1, p {
+    text-align: center;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.container {
+    background-color: #003049;
+    width: 90%;
+    height: 800px;
+    margin: 120px auto;
+    border: 5px solid #003049;
+    color: white;
+    font-size: 2em;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+}
+
+.container-1 {
+    display: flex;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: column-reverse;
+}
