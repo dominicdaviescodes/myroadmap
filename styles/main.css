@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 70%;
+  display: block;
+  margin: 50px auto;
+}
+
+p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
