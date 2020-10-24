@@ -6,15 +6,59 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
 nav {
     font-size: 1.5em;
 }
 
-ul,li {
+ul,
+li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+/* 800px and +++.  below 800 is not styled */
+/* @media (min-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/*  below 800 is styled, after 800 is not */
+/* @media (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
 
 
+/* combine only part inbetween is styled. not common. */
+/* @media (min-width: 700px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/*  best to build up */
+
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        color: yellow;
+    }
+}
+@media (min-width: 1000px) {
+    h1 {
+        color: green;
+    }
+}
