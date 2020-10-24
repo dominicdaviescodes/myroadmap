@@ -192,7 +192,7 @@
     <p>Can Position one thing at a time</p>
     <img src="/img/fb14.PNG" alt="flexbox slides">
     <h2> Flex-Basis, Grow, & Shrink</h2>
-    <p></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">mdn</a> </p>
     <img src="/img/fb15.PNG" alt="flexbox slides">
     <h2></h2>
     <main>
@@ -200,6 +200,26 @@
         <section class="maincontent"></section>
         <section class="sidebar"></section>
     </main>
+    <p>Giving sidebar and maincontent flex: 1, means they are all same size.
+    </p>
+    <img src="/img/fb16.PNG" alt="flexbox slides">
+    <p> if we give a flex-basis it's the initial size we hope the div's start at. they can then grow or shrink from
+        thoes values.</p>
+    <p>initial
+        The item is sized according to its width and height properties. It shrinks to its minimum size to fit the
+        container, but does not grow to absorb any extra free space in the flex container. This is equivalent to
+        setting "flex: 0 1 auto".</p>
+    <p>
+        'flex-grow'
+        Defines the flex-grow of the flex item. Negative values are considered invalid. Defaults to 1 when omitted.</p>
+    <p>'flex-shrink'
+        Defines the flex-shrink of the flex item. Negative values are considered invalid. Defaults to 1 when
+        omitted.</p>
+    <p>'flex-basis'
+        Defines the flex-basis of the flex item. A preferred size of 0 must have a unit to avoid being
+        interpreted as a flexibility. Defaults to 0 when omitted.
+    </p>
+
     <footer>
         <ul>
             <li>
